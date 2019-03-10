@@ -18,8 +18,6 @@ namespace Example_2
         }
         public RecordKeyStrokes()
         {
-            
-
             Title = "Record Keystrokes";
             Content = build;
         }
