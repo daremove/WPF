@@ -3,7 +3,7 @@ using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
 
-namespace Example_1
+namespace Example_2
 {
     public class DisplaySomeText : Window
     {

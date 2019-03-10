@@ -25,6 +25,19 @@ namespace Example_1
             Title = "Display Some Text";
             //Пример того, как свойству Content можно задать текстовую строку
             Content = "Content can be simple text!";
+
+            //Задаем цвет фона и текста
+            Background = new SolidColorBrush(Colors.Red);
+            Foreground = new SolidColorBrush(Colors.White);
+
+            //Позволяем окну автоматически подстраиваться под размеры содержимого
+            SizeToContent = SizeToContent.WidthAndHeight;
+            //Запрещаем менять размеры окны
+            ResizeMode = ResizeMode.NoResize;
+
+            //Задаем цвет рамки и толщину
+            BorderBrush = Brushes.SaddleBrown;
+            BorderThickness = new Thickness(25, 50, 75, 100);
         }
     }
 }
