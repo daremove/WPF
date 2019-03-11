@@ -37,7 +37,7 @@ namespace Example_2
             txtblk.Inlines.Add(runButton = new Run("button"));
             txtblk.Inlines.Add(new LineBreak());
             txtblk.Inlines.Add("to launch the ");
-            txtblk.Inlines.Add(new Bold(new Run("rocket")));
+            txtblk.Inlines.Add(new Bold(new Run("rocket"))) ;
         }
         void ButtonOnMouseEnter(object sender, MouseEventArgs e)
         {
