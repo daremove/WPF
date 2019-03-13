@@ -1,0 +1,4 @@
+speed: 40
+angle: 45
+k: 2
+m: 1

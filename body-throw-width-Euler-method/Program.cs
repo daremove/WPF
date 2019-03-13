@@ -31,8 +31,8 @@ namespace graph
             double x_next, y_next, vx_next, vy_next;
 
             x_prev = y_prev = 0;
-            vx_prev = v0 * Math.Cos(angle);
-            vy_prev = v0 * Math.Sin(angle);
+            vx_prev = v0 * Math.Cos(angle * Math.PI / 180);
+            vy_prev = v0 * Math.Sin(angle * Math.PI / 180);
 
             y_next = 0;
             while (y_next >= 0)
@@ -84,7 +84,7 @@ namespace graph
             {
                 foreach (var elem in arrayOfCoords)
                 {
-                    sw.Write($"x: {elem.x}, y: {elem.y}, vx: {elem.vx}, vy: {elem.vy} \n");
+                    sw.Write($"{elem.x};{elem.y}\n");
                 }
             }
         }
@@ -92,9 +92,7 @@ namespace graph
         public static void Main()
         {
             Application app = new Application();
- 
-            //List<Coords> result = app.GetCoords(20.0, 45.0);
- 
+
             app.ReadFromFile("../../input.txt", "../../output.txt");
         }
     }
