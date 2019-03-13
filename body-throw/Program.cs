@@ -69,7 +69,7 @@ namespace graph
             {
                 foreach (var elem in arrayOfCoords)
                 {
-                    sw.Write($"x: {elem.x}, y: {elem.y}\n");
+                    sw.Write($"{elem.x};{elem.y}\n");
                 }
             }
         }
