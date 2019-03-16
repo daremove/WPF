@@ -13,9 +13,13 @@ namespace Example_7
         public UriDialog()
         {
             Title = "Enter a URI";
+            //не отображаем на панели задача
             ShowInTaskbar = false;
+            //ширина и высота по размеру содержимого
             SizeToContent = SizeToContent.WidthAndHeight;
+            //не имеет кнопок сворачивания/разворачивания
             WindowStyle = WindowStyle.ToolWindow;
+            //располагаем по центру владельца
             WindowStartupLocation = WindowStartupLocation.CenterOwner;
 
             txtbox = new TextBox();
@@ -29,6 +33,7 @@ namespace Example_7
             set
             {
                 txtbox.Text = value;
+                //размещаем курсор в конце текущего содержимого поля
                 txtbox.SelectionStart = txtbox.Text.Length;
             }
             get

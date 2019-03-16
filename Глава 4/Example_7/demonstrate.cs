@@ -30,10 +30,14 @@ namespace Example_7
             UriDialog dlg = new UriDialog();
             dlg.Owner = this;
             dlg.Text = "http://";
+            //отображаем диалоговое окно в модальном режиме и 
+            //управление перехватывается модальным окном
+            //дальнейший код не работает пока модальное окно не вернет управление
             dlg.ShowDialog();
 
             try
             {
+                //задаем источник для фрейма
                 frm.Source = new Uri(dlg.Text);
             }
             catch (Exception exc)
