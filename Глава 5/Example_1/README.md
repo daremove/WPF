@@ -1,4 +1,4 @@
-<h2>Output data:</h2>
+ï»¿<h2>Output data:</h2>
 <p>
-  <img src="https://raw.githubusercontent.com/daremove/WPF/master/Ãëàâà%205/Example_1/images/output.png"> 
+  <img src="https://raw.githubusercontent.com/daremove/WPF/master/Ð“Ð»Ð°Ð²Ð°%205/Example_1/images/output.png"> 
 </p>
